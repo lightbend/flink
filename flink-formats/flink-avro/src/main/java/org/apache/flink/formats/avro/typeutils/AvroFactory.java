@@ -145,7 +145,6 @@ final class AvroFactory<T> {
 		}
 	}
 
-
 	private AvroFactory(
 		GenericData avroData,
 		Schema schema,
