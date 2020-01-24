@@ -139,6 +139,22 @@ under the License.
 			<scope>test</scope>
 		</dependency>
 
+		<!--
+			Including Log4j2 dependencies for tests is required for the
+			embedded Elasticsearch nodes used in tests to run correctly.
+		-->
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
